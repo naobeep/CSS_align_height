@@ -1,0 +1,19 @@
+.photo-col3 {
+  display: flex;
+
+  & figure {
+    margin: 0;
+    width: calc(100% / 3);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    position: relative;
+    & img {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+}
