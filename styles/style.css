@@ -4,9 +4,12 @@
   & figure {
     margin: 5px;
     width: calc(100% / 3);
-    overflow: hidden;
-    aspect-ratio: 4/3;
-    position: relative;
+    & .frame {
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      width: 100%;
+      position: relative;
+    }
     & img {
       min-width: 100%;
       min-height: 100%;
@@ -14,6 +17,7 @@
       bottom: 50%;
       right: 50%;
       transform: translate(50%, 50%);
+      text-align: center;
     }
   }
 }
