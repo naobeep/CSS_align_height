@@ -1,23 +1,31 @@
+.photo-col2 {
+  display: flex;
+
+  & figure {
+    margin: 5px;
+    width: calc(100% / 2);
+  }
+}
+
 .photo-col3 {
   display: flex;
 
   & figure {
     margin: 5px;
     width: calc(100% / 3);
-    & .frame {
-      overflow: hidden;
-      width: 100%;
-      position: relative;
-    }
-    & img {
-      min-width: 100%;
-      min-height: 100%;
-      position: absolute;
-      bottom: 50%;
-      right: 50%;
-      transform: translate(50%, 50%);
-      text-align: center;
-    }
+  }
+}
+
+.frame {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 
