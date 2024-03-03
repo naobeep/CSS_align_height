@@ -3,7 +3,7 @@
 
   & figure {
     margin: 5px;
-    width: calc(100% / 2);
+    width: 50%
   }
 }
 
@@ -19,13 +19,15 @@
 .frame {
   overflow: hidden;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   & img {
-    object-fit: cover;
     min-width: 100%;
     min-height: 100%;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
   }
 }
 
